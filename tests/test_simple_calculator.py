@@ -32,3 +32,17 @@ def test_simple_calculator_add_test():
 
     # Assert
     assert result == expectedResult
+
+def test_simple_calculator_subtract_test():
+
+    # Arrange
+    testCalculator = SimpleCalculator()
+    number1 = 5
+    number2 = 10
+    expectedResult = -5
+
+    # Act
+    result = testCalculator.subtract(number1, number2)
+
+    # Assert
+    assert result == expectedResult
